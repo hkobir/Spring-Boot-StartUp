@@ -7,5 +7,5 @@ Dependency Injection, IOC
 - MVN repositories for spring dependencies and libraries
 - XML based Field and Constructor Injection (Required adding spring tool 3 add on from help>eclipse market place>search>spring bean)
 - Java based Config Field and Constructor Injection
-- Autowired annotation based 
+- Autowired annotation based Injection
 
