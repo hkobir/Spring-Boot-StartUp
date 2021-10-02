@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="coder1" class="com.hk.demo.models.Coder">
+		<property name="id" value="1001"></property>
+		<property name="name" value="Kobir"></property>
+		<property name="language" value="Java"></property>
+		<property name="computer" ref="computer1"></property>
+	</bean>
+
+	<bean id="computer1" class="com.hk.demo.models.Computer">
+		<property name="brand" value="AMD ryzen 002"></property>
+	</bean>
+
+	<bean id="coder2" class="com.hk.demo.models.Coder">
+		<constructor-arg index="0" value="1002"></constructor-arg>
+		<constructor-arg index="1" value="Mr. Adahan"></constructor-arg>
+		<constructor-arg index="2" value="Python"></constructor-arg>
+		<constructor-arg index="3" ref="computer2"></constructor-arg>
+	</bean>
+
+	<bean id="computer2" class="com.hk.demo.models.Computer">
+		<constructor-arg index="0" value="Intel"></constructor-arg>
+	</bean>
+
+
+	<bean id="car1" class="com.hk.demo.models.Car">
+		<property name="tyre" value="4"></property>
+		<property name="type" value="Fararri"></property>
+		<property name="engine" ref="engine1"></property>
+	</bean>
+
+	<bean id="engine1" class="com.hk.demo.models.Engine">
+
+	</bean>
+</beans>
